@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>oi *</pattern>
+        <template>oi tudo bem ,em que posso ajudar</template>
+    </category>
+    
+    <category>
+        <pattern>boa tarde</pattern>
+        <template>boa tarde em que posso ajudar</template>
+    </category>
+    
+    <category>
+        <pattern>boa noite</pattern>
+        <template>boa noite em que posso ajudar</template>
+    </category>
+    
+    <category>
+        <pattern>bom dia</pattern>
+        <template>bom dia em que posso ajudar</template>
+    </category>
+    
+    <category>
+        <pattern>me recomenda um jogo</pattern>
+        <template>que tipo de jogo
+        <think><set name="topic">jogo</set></think></template>
+    </category>
+  
+    <category>
+        <pattern>seu nome</pattern>
+        <template> Meu nome é GameRobot</template>
+    </category>
+  
+    <category>
+        <pattern>como se chama</pattern>
+        <template> Meu nome é GameRobot</template>
+    </category>
+  
+   <category>
+    <pattern>* idade</pattern>
+    <template> minha idade é 18 anos.</template>
+  </category>
+  
+<topic name="jogo">
+    
+    <category>
+        <pattern>o que é tipo de jogo </pattern>
+        <template> é o estilo que quer jogar pode ser corrida , esporte, tiro, mmorpg,etc.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>o que e tipo de jogo </pattern>
+        <template> é o estilo que quer jogar pode ser corrida , esporte, tiro, mmorpg,etc.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* tipo de jogo </pattern>
+        <template> é o estilo que quer jogar pode ser corrida , esporte, tiro, mmorpg,etc.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>o que é mmorpg </pattern>
+        <template> Massively Multiplayer Online Role-Playing Game, games para uma grande quantidade de usuários.
+        </template>
+    </category>
+    
+     <category>
+        <pattern>o que é jogo de aventura</pattern>
+        <template> Jogos de aventura, também conhecidos como adventures, são jogos eletrônicos cuja ênfase é focada no enredo e não na parte gráfica ou na ação.
+        </template>
+    </category>
+    
+     <category>
+        <pattern>o que é jogo de acao </pattern>
+        <template> Um jogo eletrônico de ação é um tipo de jogo eletrônico que desafia a velocidade, reflexo e raciocínio rápido do jogador. Jogos de ação geralmente incluem conflitos estratégicos.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>o que é jogo de tiro </pattern>
+        <template> Jogos de tiro (ou shooter em inglês) é um subgênero de jogos de ação, os quais se dispões com sua principal mecânica de usar projéteis para eliminar inimigos.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>o que é jogo de corrida </pattern>
+        <template> Um jogo eletrônico de corrida é um gênero de jogos eletrônicos em que o jogador participa de competições de corrida com qualquer tipo de veículo terrestre.
+        </template>
+    </category>
+    
+     <category>
+        <pattern>o que é jogo de esporte </pattern>
+        <template> Um jogo de esporte ou jogo de desporto é um jogo eletrônico de PC ou videogame que simula esportes tradicionais.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>o que é jogo de estrategia </pattern>
+        <template> Jogo de estratégia é uma categoria de jogo (sejam de tabuleiro, de cartas, de videogames ou de computador), em que a habilidade dos jogadores em tomar decisões estratégicas supera a sorte como fator de determinação do vencedor.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ mmorpg</pattern>
+        <template>
+            <random>
+                <li>Ultimo Online</li>
+                <li>World of Warcraft</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* acao</pattern>
+        <template>
+            <random>
+                <li>Frogger</li> 
+                <li>Joust</li> 
+                <li>Contra</li> 
+                <li>Nights into Dreams...</li> 
+                <li>WarioWare, Inc.: Mega Microgames!</li> 
+                <li>Katamari Damacy</li> 
+            </random>
+        </template>
+     </category>
+     
+     <category>
+        <pattern>* ação</pattern>
+        <template>
+            <random>
+                <li>Frogger</li> 
+                <li>Joust</li> 
+                <li>Contra</li> 
+                <li>Nights into Dreams...</li> 
+                <li>WarioWare, Inc.: Mega Microgames!</li> 
+                <li>Katamari Damacy</li> 
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* corrida</pattern>
+        <template>
+            <random>
+                <li>Super Mario Kart</li> 
+                <li>Daytona USA</li> 
+                <li>Wipeout</li> 
+                <li>Burnout 3: Takedown</li> 
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* esporte</pattern>
+        <template>
+            <random>
+                <li>Pong</li> 
+                <li>Mike Tyson's Punch-Out!!</li> 
+                <li>NBA Jam</li> 
+                <li>Tony Hawk's Pro Skater 2</li> 
+                <li>Wii Sports</li> 
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* estrategia</pattern>
+        <template>
+            <random>
+                <li>UFO: Enemy Unknown</li> 
+                <li>Warcraft II: Tides of Darkness</li> 
+                <li>Civilization II</li> 
+                <li>Command e Conquer: Red Alert</li> 
+                <li>StarCraft</li> 
+                <li>Age of Empires II</li> 
+                <li>Homeworld</li> 
+                <li>Advance Wars</li> 
+                <li>Civilization IV</li> 
+                <li>Fire Emblem Awakening</li> 
+            </random>
+        </template>
+    </category>
+    
+    
+    
+    <category>
+        <pattern>* luta</pattern>
+        <template>
+            <random>
+                <li>Street Fighter II</li> 
+                <li>Mortal Kombat II</li> 
+                <li>Tekken 3</li> 
+                <li>SoulCalibur</li> 
+                <li>Super Smash Bros. Melee</li> 
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* moba</pattern>
+        <template>Dota 2</template>
+    </category>
+    
+    <category>
+        <pattern>* plataforma</pattern>
+        <template>
+            <random>
+                <li>Donkey Kong</li> 
+                <li>Pitfall!</li> 
+                <li>Super Mario Bros.</li> 
+                <li>Mega Man 2</li> 
+                <li>Ninja Gaiden</li> 
+                <li>Super Mario Bros. 3</li> 
+                <li>Prince of Persia</li> 
+                <li>Super Mario World</li> 
+                <li>Sonic the Hedgehog</li> 
+                <li>Sonic the Hedgehog 2</li> 
+                <li>Donkey Kong Country</li> 
+                <li>Yoshi's Island</li> 
+                <li>Super Mario 64</li> 
+                <li>Jet Set Radio</li> 
+                <li>Super Mario Galaxy</li> 
+                <li>Spelunky</li> 
+                <li>Limbo</li> 
+                <li>Super Mario Galaxy 2</li> 
+                <li>Super Meat Boy</li> 
+                <li>Inside</li> 
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* rpg</pattern>
+        <template>
+            <random>
+                <li>Gauntlet</li> 
+                <li>Phantasy Star IV</li> 
+                <li>Secret of Mana</li> 
+                <li>EarthBound</li> 
+                <li>Final Fantasy VI</li> 
+                <li>Chrono Trigger</li> 
+                <li>Pokémon Red e Blue</li> 
+                <li>Final Fantasy Tactics</li> 
+                <li>Final Fantasy VII</li> 
+                <li>Panzer Dragoon Saga</li> 
+                <li>Planescape: Torment</li> 
+                <li>Baldur's Gate II: Shadows of Amn</li> 
+                <li>Deus Ex</li> 
+                <li>Diablo II</li> 
+                <li>Final Fantasy X</li> 
+                <li>Star Wars: Knights of the Old Republic</li> 
+                <li>The Elder Scrolls IV: Oblivion</li> 
+                <li>Fallout 3</li> 
+                <li>Persona 4</li> 
+                <li>Mass Effect 2</li> 
+                <li>Dark Souls</li> 
+                <li>The Elder Scrolls V: Skyrim</li> 
+                <li>Mass Effect 3</li> 
+                <li>The Witcher 3: Wild Hunt</li> 
+            </random>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>* tiro</pattern>
+        <template>
+            <random>
+                <li>Wolfenstein 3D</li> 
+                <li>Doom</li> 
+                <li>Quake</li> 
+                <li>GoldenEye 007</li> 
+                <li>Quake II</li> 
+                <li>Star Wars Jedi Knight: Dark Forces II</li> 
+                <li>Half-Life</li> 
+                <li>System Shock 2</li> 
+                <li>Counter-Strike</li> 
+                <li>Halo: Combat Evolved</li> 
+                <li>Max Payne</li> 
+                <li>Half-Life 2</li> 
+                <li>Gears of War</li> 
+                <li>BioShock</li> 
+                <li>Call of Duty 4: Modern Warfare</li> 
+                <li>Halo 3</li> 
+                <li>Team Fortress 2</li> 
+                <li>Left 4 Dead</li> 
+                <li>Overwatch</li> 
+            </random>
+        </template>
+    </category>
+</topic>
+</aiml>
+
